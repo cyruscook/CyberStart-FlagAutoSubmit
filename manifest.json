@@ -1,0 +1,13 @@
+{
+	"name": "CyberStart Flag Auto Submit",
+	"version": "1.0",
+	"description": "Auto submit the flag for CyberStart challenges",
+	"manifest_version": 2,
+	"content_scripts": [
+		{
+			"run_at" :"document_idle",
+			"matches": ["https://assess.joincyberdiscovery.com/*", "https://game.joincyberdiscovery.com/*", "https://essentials.joincyberdiscovery.com/*", "https://elite.joincyberdiscovery.com/*"],
+			"js": ["jquery.min.js", "script.js"]
+		}
+	]
+}
